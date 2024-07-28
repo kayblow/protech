@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+    <title>Protech Support - Your One-Stop Solution</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CLato:300,300italic,400,400italic,700,900%7CPlayfair+Display:700italic,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        input::placeholder, textarea::placeholder {
+            color: #ccc;
+            opacity: 1;
+        }
+        .form-wrap {
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .form-wrap input, .form-wrap textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-wrap input:hover, .form-wrap textarea:hover {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        .swiper-slide-caption {
+            position: relative;
+        }
+        .caption-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Black overlay */
+            z-index: 1;
+        }
+        .caption-text {
+            position: relative;
+            color: #fff;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<div class="preloader">
+    <div>
+        <a class="brand brand-md" href="index.html"><img src="images/logo-inverse-139x22.svg" alt="" width="139" height="22"/></a>
+        <div class="page-loader-body">
+            <div id="spinningSquaresG">
+                <div class="spinningSquaresG" id="spinningSquaresG_1"></div>
+                <div class="spinningSquaresG" id="spinningSquaresG_2"></div>
+                <div class="spinningSquaresG" id="spinningSquaresG_3"></div>
+                <div class="spinningSquaresG" id="spinningSquaresG_4"></div>
+                <div class="spinningSquaresG" id="spinningSquaresG_5"></div>
+                <div class="spinningSquaresG" id="spinningSquaresG_6"></div>
+                <div class="spinningSquaresG" id="spinningSquaresG_7"></div>
+                <div class="spinningSquaresG" id="spinningSquaresG_8"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page">
+    <header class="page-head">
+        <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+                 data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static">
+                <div class="rd-navbar-inner">
+                    <div class="rd-navbar-panel">
+                        <button class="rd-navbar-toggle" data-custom-toggle=".rd-navbar-nav-wrap" data-custom-toggle-disable-on-blur="true"><span></span></button>
+                        <a class="rd-navbar-brand brand" href="index.html"><img src="images/logo-default-139x22.svg" alt="" width="139" height="22"/></a>
+                    </div>
+                    <div class="rd-navbar-group rd-navbar-search-wrap">
+                        <div class="rd-navbar-nav-wrap">
+                            <div class="rd-navbar-nav-inner">
+                                <div class="rd-navbar-search">
+                                    <form class="rd-search" onsubmit="return searchFunction()" method="GET">
+                                        <div class="form-wrap">
+                                            <input class="form-input" id="rd-search-form-input" type="text" name="s"
+                                                   placeholder="Search..." autocomplete="off" required>
+                                        </div>
+                                        <button class="rd-search-submit" type="submit"></button>
+                                    </form>
+                                    <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                                </div>
+                                <ul class="rd-navbar-nav">
+                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="#about">About Us</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="#services">Services</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="#contact">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="swiper-container swiper-slider swiper-variant-1 bg-black" data-autoplay="5500" data-simulate-touch="true" data-swiper="{"loop":false}">
+        <div class="swiper-wrapper text-center">
+            <div class="swiper-slide" data-slide-bg="images/home-slider-1-slide-1.jpg">
+                <div class="caption-overlay"></div>
+                <div class="swiper-slide-caption">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-11 col-lg-10 col-xl-9">
+                                <h2 class="slider-header caption-text" data-caption-animate="fadeInUp" data-caption-delay="0s">Welcome to Protech Support</h2>
+                                <p class="text-bigger slider-text caption-text" data-caption-animate="fadeInUp" data-caption-delay="100">Your trusted partner in general supplies, construction, security services, graphic design, and ICT equipment supply & software maintenance.</p>
+                                <div class="group-xl-responsive">
+                                    <a class="button button-xl button-white-outline-variant-1" data-caption-animate="fadeInUp" data-caption-delay="250" href="#services">Explore Our Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-nav-wrap">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section class="section section-50 section-md-90 section-xl-top-120 section-xl-bottom-145" id="about">
+        <div class="container">
+            <div class="row row-40 row-md-60 align-items-lg-end justify-content-lg-center">
+                <div class="col-md-10 col-lg-5 wow fadeInLeftSmall" data-wow-duration="1s" data-wow-offset="200">
+                    <h2 class="text-red-orange">Who We Are</h2>
+                    <p class="h3">Protech Support</p>
+                    <p class="text-secondary">Located in Serowe, Botswana, Protech Support (PTY) LTD is dedicated to providing exceptional general supplies, construction, security services, graphic design, and ICT equipment supply & software maintenance.</p>
+                </div>
+                <div class="col-md-11 col-lg-7">
+                    <div class="image-group">
+                        <figure class="wow fadeInRightSmall" data-wow-duration=".9s" data-wow-offset="80"><img src="images/about-1.png" alt="" width="243" height="199"/></figure>
+                        <figure class="wow fadeInRightSmall" data-wow-duration=".9s" data-wow-offset="200"><img src="images/about-2.png" alt="" width="508" height="341"/></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider-spectrum"></div>
+    <section class="parallax-container bg-black" data-parallax-img="images/parallax-1.jpg">
+        <div class="parallax-content">
+            <div class="section-50 section-md-75 section-xl-top-100 section-xl-bottom-120">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-11 col-lg-10 col-xl-9 text-center">
+                            <h3><span>Your</span><em>One-Stop Solution</em></h3>
+                            <p>
+                                Explore a wide range of products and services offered by Protech Support. We take pride in providing high-quality solutions that meet all your business needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-60 section-md-100 bg-accent novi-background" id="services">
+        <div class="container text-center text-lg-start">
+            <h3>Our Services</h3>
+            <p><span class="d-inline-block" style="max-width: 580px;">We provide a comprehensive range of services tailored to meet your needs.</span></p>
+            <div class="row row-30">
+                <div class="col-sm-6 col-md-4">
+                    <article class="icon-box-vertical">
+                        <span class="novi-icon icon icon-primary icon-md material-icons-security"></span>
+                        <h5 class="icon-box-header"><a href="#">General Supplies</a></h5>
+                        <p>We offer a variety of general supplies including:</p>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li>- Office supplies</li>
+                            <li>- Cleaning products</li>
+                            <li>- Safety equipment</li>
+                            <li>- PPE (Personal Protective Equipment)</li>
+                            <li>- Stationery</li>
+                            <li>- Construction materials</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <article class="icon-box-vertical">
+                        <span class="novi-icon icon icon-primary icon-md material-icons-build"></span>
+                        <h5 class="icon-box-header"><a href="#">Construction Services</a></h5>
+                        <p>From residential to commercial projects, we provide:</p>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li>- Building construction</li>
+                            <li>- Renovations</li>
+                            <li>- Roofing services</li>
+                            <li>- Electrical installations</li>
+                            <li>- Plumbing services</li>
+                            <li>- Civil engineering</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <article class="icon-box-vertical">
+                        <span class="novi-icon icon icon-primary icon-md material-icons-palette"></span>
+                        <h5 class="icon-box-header"><a href="#">Graphics Designing</a></h5>
+                        <p>Creative graphic design services that elevate your brand image, including:</p>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li>- Logo design</li>
+                            <li>- Business cards</li>
+                            <li>- Brochures and flyers</li>
+                            <li>- Digital marketing materials</li>
+                            <li>- Website graphics</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <article class="icon-box-vertical">
+                        <span class="novi-icon icon icon-primary icon-md material-icons-device_hub"></span>
+                        <h5 class="icon-box-header"><a href="#">ICT Equipment Supply</a></h5>
+                        <p>Providing essential ICT equipment including:</p>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li>- Computers and laptops</li>
+                            <li>- Networking equipment</li>
+                            <li>- Software solutions</li>
+                            <li>- Printers and accessories</li>
+                            <li>- Maintenance and configurations</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <article class="icon-box-vertical">
+                        <span class="novi-icon icon icon-primary icon-md material-icons-security"></span>
+                        <h5 class="icon-box-header"><a href="#">Security Services</a></h5>
+                        <p>Ensuring safety for businesses and individuals through:</p>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li>- On-site security personnel</li>
+                            <li>- Security system installation</li>
+                            <li>- Risk assessments</li>
+                            <li>- Event security management</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-50 section-md-90 section-xl-top-80 section-xl-bottom-80">
+        <div class="container text-center">
+            <h3>Meet Our Team</h3>
+            <p>We are a team of dedicated professionals who love what they do.</p>
+            <div class="row row-40 row-lg-60">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail thumbnail-variant-1">
+                        <div class="thumbnail-image"><img src="images/team-1-189x189.png" alt="" width="189" height="189"/>
+                            <div class="thumbnail-image-inner"><a class="novi-icon icon icon-md material-icons-local_phone link-primary-inverse-v2" href="tel:#"></a><a class="novi-icon icon icon-md-smaller fa-envelope-o link-white" href="mailto:#"></a></div>
+                        </div>
+                        <div class="thumbnail-caption">
+                            <h5 class="header"><a href="#">Kabelo Gabalaolwe</a></h5>
+                            <p>Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail thumbnail-variant-1">
+                        <div class="thumbnail-image"><img src="images/team-2-189x189.png" alt="" width="189" height="189"/>
+                            <div class="thumbnail-image-inner"><a class="novi-icon icon icon-md material-icons-local_phone link-primary-inverse-v2" href="tel:#"></a><a class="novi-icon icon icon-md-smaller fa-envelope-o link-white" href="mailto:#"></a></div>
+                        </div>
+                        <div class="thumbnail-caption">
+                            <h5 class="header"><a href="#">Mothataosi Leutlwetse</a></h5>
+                            <p>Chief Operations Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail thumbnail-variant-1">
+                        <div class="thumbnail-image"><img src="images/team-3-189x189.png" alt="" width="189" height="189"/>
+                            <div class="thumbnail-image-inner"><a class="novi-icon icon icon-md material-icons-local_phone link-primary-inverse-v2" href="tel:#"></a><a class="novi-icon icon icon-md-smaller fa-envelope-o link-white" href="mailto:#"></a></div>
+                        </div>
+                        <div class="thumbnail-caption">
+                            <h5 class="header"><a href="#">Karabelo Seakgosing</a></h5>
+                            <p>Construction Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail thumbnail-variant-1">
+                        <div class="thumbnail-image"><img src="images/team-4-189x189.png" alt="" width="189" height="189"/>
+                            <div class="thumbnail-image-inner"><a class="novi-icon icon icon-md material-icons-local_phone link-primary-inverse-v2" href="tel:#"></a><a class="novi-icon icon icon-md-smaller fa-envelope-o link-white" href="mailto:#"></a></div>
+                        </div>
+                        <div class="thumbnail-caption">
+                            <h5 class="header"><a href="#">Another Employee</a></h5>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section class="section section-50 section-md-90 bg-gray-lighter novi-background" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h3>Get in Touch</h3>
+            <p>Have questions? We are here to help you!</p>
+        </div>
+        <div class="row row-40">
+            <div class="col-md-6">
+                <form id="contactForm" action="mailto:protech0524@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-wrap">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-wrap">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-wrap">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-wrap">
+                        <button class="message-btn" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="search-wrapper">
+        <button class="search-btn" onclick="toggleSearchBox()">
+            <span class="search-icon">&#128269;</span>
+        </button>
+        <div class="search-box" id="search-box">
+            <form class="rd-search" onsubmit="return searchFunction()" method="GET">
+                <div class="form-wrap">
+                    <input class="form-input" id="rd-search-form-input" type="text" name="s" placeholder="Search..." autocomplete="off" required>
+                </div>
+                <button class="rd-search-submit" type="submit"></button>
+            </form>
+            <div class="rd-search-results-live" id="rd-search-results-live"></div>
+        </div>
+    </div>
+</section>
+
+    <footer class="page-foot page-foot-default section-35 bg-black novi-background text-center">
+        <div class="container">
+            <p class="rights small"><span>Protech Support</span><span>&nbsp;&#169;&nbsp;</span><span class="copyright-year"></span><span>All Rights Reserved.</span><br class="d-md-none"><span>Designed by <a class="link-primary" href="#">Protech Support</a></span></p>
+        </div>
+    </footer>
+</div>
+<div class="snackbars" id="form-output-global"></div>
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    function searchFunction() {
+        var input = document.getElementById("rd-search-form-input").value;
+        var results = document.getElementById("rd-search-results-live");
+        results.innerHTML = "";
+
+        const services = ["General Supplies", "Construction Services", "Security Services", "Graphics Designing", "ICT Equipment Supply"];
+        const found = services.filter(service => service.toLowerCase().includes(input.toLowerCase()));
+
+        if (found.length === 0) {
+            results.innerHTML = "<p>No results found.</p>";
+        } else {
+            results.innerHTML = "<p>Results:</p><ul>" + found.map(item => `<li>${item}</li>`).join('') + "</ul>";
+        }
+        return false; // Prevent form submission
+    }
+</script>
+</body>
+</html>
